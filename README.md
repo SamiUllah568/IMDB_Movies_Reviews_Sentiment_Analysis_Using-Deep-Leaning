@@ -230,7 +230,6 @@ plt.axis("off")
 plt.tight_layout()
 plt.show()
 ```
-![alt text](image-1.png)
 
 ## Defining Features and Target for Sentiment Analysis
 
