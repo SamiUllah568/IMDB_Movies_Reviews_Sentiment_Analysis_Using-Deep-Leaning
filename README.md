@@ -189,6 +189,14 @@ print(movies["review"][0])
 print("\n============After Preprocessing============\n")
 print(movies["clean_text"][0])
 ```
+============Before Peprocessing============
+
+One of the other reviewers has mentioned that after watching just 1 Oz episode you'll be hooked. They are right, as this is exactly what happened with me.<br /><br />The first thing that struck me about Oz was its brutality and unflinching scenes of violence, which set in right from the word GO. Trust me, this is not a show for the faint hearted or timid. This show pulls no punches with regards to drugs, sex or violence. Its is hardcore, in the classic use of the word.<br /><br />It is called OZ as that is the nickname given to the Oswald Maximum Security State Penitentary. It focuses mainly on Emerald City, an experimental section of the prison where all the cells have glass fronts and face inwards, so privacy is not high on the agenda. Em City is home to many..Aryans, Muslims, gangstas, Latinos, Christians, Italians, Irish and more....so scuffles, death stares, dodgy dealings and shady agreements are never far away.<br /><br />I would say the main appeal of the show is due to the fact that it goes where other shows wouldn't dare. Forget pretty pictures painted for mainstream audiences, forget charm, forget romance...OZ doesn't mess around. The first episode I ever saw struck me as so nasty it was surreal, I couldn't say I was ready for it, but as I watched more, I developed a taste for Oz, and got accustomed to the high levels of graphic violence. Not just violence, but injustice (crooked guards who'll be sold out for a nickel, inmates who'll kill on order and get away with it, well mannered, middle class inmates being turned into prison bitches due to their lack of street skills or prison experience) Watching Oz, you may become comfortable with what is uncomfortable viewing....thats if you can get in touch with your darker side.
+
+============After Peprocessing============
+
+reviewer mention watch oz episode ll hook right exactly happen thing strike oz brutality unflinche scene violence set right word trust faint hearted timid pull punch regard drug sex violence hardcore classic use word call oz nickname give oswald maximum security state penitentary focus mainly emerald city experimental section prison cell glass front face inward privacy high agenda em city home manyaryan muslims gangstas latinos christians italian irish moreso scuffle death stare dodgy dealing shady agreement far away main appeal fact go show not dare forget pretty picture paint mainstream audience forget charm forget romanceoz not mess episode see strike nasty surreal not ready watch develop taste oz get accustomed high level graphic violence violence injustice crook guard ll sell nickel inmate ll kill order away mannered middle class inmate turn prison bitch lack street skill prison experience watch oz comfortable uncomfortable viewingthat touch dark
+
 
 ## Visualizing Sentiment-Based Word Clouds
 
@@ -230,6 +238,8 @@ plt.axis("off")
 plt.tight_layout()
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/0007b862-1f2d-4d0f-923a-a1e9661fd335)
+
 
 ## Defining Features and Target for Sentiment Analysis
 
@@ -411,6 +421,35 @@ print("Test Classification Report:\n", classification_report(y_test, pred_test))
 print("Test Confusion Matrix:\n", confusion_matrix(y_test, pred_test))
 ```
 
+## 📊 Model Performance
+
+### 🔹 Training Results
+
+| Metric          | Class 0  | Class 1  | Overall |
+|----------------|---------|---------|---------|
+| **Accuracy**   | -       | -       | **88.92%** |
+| **Precision**  | 0.88    | 0.89    | -       |
+| **Recall**     | 0.89    | 0.88    | -       |
+| **F1-score**   | 0.89    | 0.89    | -       |
+
+#### Confusion Matrix (Training)
+[[17671 2088]
+[ 2308 17598]]
+
+
+### 🔹 Testing Results
+
+| Metric          | Class 0  | Class 1  | Overall |
+|----------------|---------|---------|---------|
+| **Accuracy**   | -       | -       | **87.03%** |
+| **Precision**  | 0.87    | 0.87    | -       |
+| **Recall**     | 0.87    | 0.87    | -       |
+| **F1-score**   | 0.87    | 0.87    | -       |
+
+#### Confusion Matrix (Testing)
+[[4291 648] 
+[ 638 4340]]
+
 ## Model Saving
 
 ```python
@@ -489,4 +528,24 @@ print(prediction(text))
 Prediction:
    'Negative'
 ```
+
+## 🏗️ Technologies Used
+
+| Technology       | Description |
+|-----------------|-------------|
+| **Python**      | Programming language |
+| **TensorFlow/Keras** | Deep learning framework |
+| **Scikit-learn** | ML metrics & data processing |
+| **Pandas & NumPy** | Data manipulation |
+| **Matplotlib & Seaborn** | Data visualization |
+
+
+## 📬 Contact
+
+| Platform  | Link |
+|-----------|------|
+| **GitHub**  | [SamiUllah568](https://github.com/SamiUllah568) |
+| **LinkedIn**  | [Sami Ullah](https://www.linkedin.com/in/sami-ullah-b10b93300/) |
+| **Email**  | sk2579784@example.com |
+
 
